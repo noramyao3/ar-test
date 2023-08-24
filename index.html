@@ -38,6 +38,16 @@
       </a-entity>
     </a-marker>
 
+
+    <!-- TEST -->
+    <a-marker type="pattern" url="assets/pattern-marker_test.patt">
+      <!-- 3Dモデルを表示 -->
+      <a-entity gltf-model="#3dmodel" scale="0.6 0.6 0.6" position="0 1 0" rotation="-90 0 0" animation-mixer></a-entity>
+      <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+        <a-image src="#text_circle" width="3" height="3" rotation="-90 0 0"></a-image>
+      </a-entity>
+    </a-marker>
+
     <a-light type="ambient" color="#ffffff"></a-light>
     <a-light type="point" intensity="2" position="0 0 0"></a-light>
     <a-entity camera></a-entity>
